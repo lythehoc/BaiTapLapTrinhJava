@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author lythehoc
  */
-public class Bai1{
+public class Bai1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap ho va ten: ");
