@@ -11,16 +11,14 @@ import java.util.Scanner;
  *
  * @author lythehoc
  */
-public class Bai1{
+public class Bai3 {
     public static void main(String[] args) {
+       double canh, theTich;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap ho va ten: ");
-        String hoTen = sc.nextLine();
+        System.out.println("Nhap vao chieu dai canh: ");
+        canh = sc.nextDouble();
         
-        System.out.println("Nhap diem trung binh: ");
-        double diemTB = sc.nextDouble();
-        
-        System.out.println("Ho va ten: " + hoTen );
-        System.out.println("Diem trung binh: " + diemTB );
+        theTich = Math.pow(canh, 3);
+        System.out.println("The tich cua hinh lap phuong la: "+ theTich);    
     }
 }
