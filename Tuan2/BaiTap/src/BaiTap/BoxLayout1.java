@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LamTaiLop;
+package BaiTap;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -30,7 +30,6 @@ public class BoxLayout1 extends JFrame{
         
         JPanel pnBox = new JPanel();
         Font chu =new Font("Arial", Font.BOLD | Font.ITALIC,25 );//set phong chu,co chu
-         
         pnBox.setLayout(new javax.swing.BoxLayout(pnBox,javax.swing.BoxLayout.Y_AXIS));// X theo chieu ngang, Y theo chieu doc
         
         JButton nut1 = new JButton("BoxLayout la day chu dau");
