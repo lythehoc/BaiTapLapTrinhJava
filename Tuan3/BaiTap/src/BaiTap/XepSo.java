@@ -5,6 +5,8 @@
  */
 package BaiTap;
 
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,6 +20,9 @@ public class XepSo extends javax.swing.JFrame {
      */
     public XepSo() {
         initComponents();
+         String m = JOptionPane.showInputDialog("Nhập Tên Người Chơi: ");
+        System.out.println(m);
+        setTitle(m);
     }
 
     /**
@@ -34,24 +39,25 @@ public class XepSo extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
+        btn15 = new javax.swing.JButton();
+        btn14 = new javax.swing.JButton();
+        btn13 = new javax.swing.JButton();
+        btn12 = new javax.swing.JButton();
+        btn11 = new javax.swing.JButton();
+        btn10 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
+        btn0 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(406, 300));
 
         jPanel2.setBackground(new java.awt.Color(240, 130, 240));
 
@@ -77,98 +83,226 @@ public class XepSo extends javax.swing.JFrame {
 
         jPanel4.setLayout(new java.awt.GridLayout(4, 4));
 
-        jButton2.setText("14");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn15.setText("15");
+        btn15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn15ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton2);
+        jPanel4.add(btn15);
 
-        jButton3.setText("754");
-        jPanel4.add(jButton3);
+        btn14.setText("14");
+        jPanel4.add(btn14);
 
-        jButton6.setText("87");
-        jPanel4.add(jButton6);
-
-        jButton4.setText("456");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btn13.setText("13");
+        btn13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btn13ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton4);
+        jPanel4.add(btn13);
 
-        jButton10.setText("34");
-        jPanel4.add(jButton10);
-
-        jButton5.setText("435");
-        jPanel4.add(jButton5);
-
-        jButton7.setText("45");
-        jPanel4.add(jButton7);
-
-        jButton8.setText("7675");
-        jPanel4.add(jButton8);
-
-        jButton14.setText("1");
-        jPanel4.add(jButton14);
-
-        jButton11.setText("333");
-        jPanel4.add(jButton11);
-
-        jButton9.setText("999");
-        jPanel4.add(jButton9);
-
-        jButton12.setText("88888");
-        jPanel4.add(jButton12);
-
-        jButton13.setText("0");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        btn12.setText("12");
+        btn12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                btn12ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton13);
+        jPanel4.add(btn12);
 
-        jButton15.setText("8345");
-        jPanel4.add(jButton15);
+        btn11.setText("11");
+        jPanel4.add(btn11);
 
-        jButton16.setText("977");
-        jPanel4.add(jButton16);
-
-        jButton17.setText("85");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        btn10.setText("10");
+        btn10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                btn10ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton17);
+        jPanel4.add(btn10);
+
+        btn9.setText("9");
+        jPanel4.add(btn9);
+
+        btn8.setText("8");
+        jPanel4.add(btn8);
+
+        btn7.setText("7");
+        jPanel4.add(btn7);
+
+        btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btn6);
+
+        btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btn5);
+
+        btn4.setText("4");
+        jPanel4.add(btn4);
+
+        btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btn3);
+
+        btn2.setText("2");
+        jPanel4.add(btn2);
+
+        btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btn1);
+
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btn0);
 
         getContentPane().add(jPanel4, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    public void tronMang(int [] ar){
+        Random rnd = ThreadLocalRandom.current();
+        for(int i = ar.length-1;i>0;i--){
+            int index = rnd.nextInt(i+1);
+            int a = ar[index];
+            ar[index] = ar[i];
+            ar[i]=a;
+        }
+    }
+     public void checkWin(){
+        if (btn1.getText().equals("1")
+                && btn2.getText().equals("2")
+                && btn3.getText().equals("3")
+                && btn4.getText().equals("4")
+                && btn5.getText().equals("5")
+                && btn6.getText().equals("6")
+                && btn7.getText().equals("7")
+                && btn8.getText().equals("8")
+                && btn9.getText().equals("9")
+                && btn10.getText().equals("10")
+                && btn11.getText().equals("11")
+                && btn12.getText().equals("12")
+                && btn13.getText().equals("13")
+                && btn14.getText().equals("14")
+                && btn15.getText().equals("15")
+                && btn0.getText().equals("")
+                ){
+            JOptionPane.showMessageDialog(null, "Win");
+        }
         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
+    
+    private void btn15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn15ActionPerformed
+        
+    }//GEN-LAST:event_btn15ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btn12ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_btn3ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_btn0ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showInputDialog("Chơi không được em ơi :((");        // TODO add your handling code here:
+      btn1.setEnabled(true);
+        btn2.setEnabled(true);
+        btn3.setEnabled(true);
+        btn4.setEnabled(true);
+        btn5.setEnabled(true);
+        btn6.setEnabled(true);
+        btn7.setEnabled(true);
+        btn8.setEnabled(true);
+        btn9.setEnabled(true);
+        btn10.setEnabled(true);
+        btn11.setEnabled(true);
+        btn12.setEnabled(true);
+        btn13.setEnabled(true);
+        btn14.setEnabled(true);
+        btn15.setEnabled(true);
+        btn0.setEnabled(true);
+       ganSo();
+       btn0.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+ public void ganSo(){
+         int []a={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+         tronMang(a);
+         int num1 = a[0];
+         btn1.setText(""+num1);
+         int num2 = a[1];
+         btn2.setText(""+num2);
+         int num3 = a[2];
+         btn3.setText(""+num3);
+         int num4 = a[3];
+         btn4.setText(""+num4);
+         int num5 = a[4];
+         btn5.setText(""+num5);
+         int num6 = a[5];
+         btn6.setText(""+num6);
+         int num7 = a[6];
+         btn7.setText(""+num7);
+         int num8 = a[7];
+         btn8.setText(""+num8);
+         int num9 = a[8];
+         btn9.setText(""+num9);
+         int num10 = a[9];
+         btn10.setText(""+num10);
+         int num11 = a[10];
+         btn11.setText(""+num11);
+         int num12 = a[11];
+         btn12.setText(""+num12);
+         int num13 = a[12];
+         btn13.setText(""+num13);
+         int num14 = a[13];
+         btn14.setText(""+num14);
+         int num15 = a[14];
+         btn15.setText(""+num15);
+         
+         
+    }
+    private void btn13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn13ActionPerformed
+
+    private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn10ActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -206,23 +340,23 @@ public class XepSo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn0;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn10;
+    private javax.swing.JButton btn11;
+    private javax.swing.JButton btn12;
+    private javax.swing.JButton btn13;
+    private javax.swing.JButton btn14;
+    private javax.swing.JButton btn15;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

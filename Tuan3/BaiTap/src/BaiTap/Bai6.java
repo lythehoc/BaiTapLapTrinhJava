@@ -9,12 +9,19 @@ package BaiTap;
  *
  * @author lythehoc
  */
-public class TinhToan extends javax.swing.JFrame {
+public class Bai6 extends javax.swing.JFrame {
+private static final long serialVersionUID = 1L;
 
-    /**
-     * Creates new form TinhToan
-     */
-    public TinhToan() {
+public void doShow()
+	{
+		setSize(400, 300);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setResizable(false);
+		setVisible(true);
+	}	
+
+    public Bai6() {
         initComponents();
     }
 
@@ -99,10 +106,25 @@ public class TinhToan extends javax.swing.JFrame {
         PnTacVu.setBorder(javax.swing.BorderFactory.createTitledBorder("Chọn Tác Vụ"));
 
         jButton1.setText("Giải");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Xóa");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Thoát");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PnTacVuLayout = new javax.swing.GroupLayout(PnTacVu);
         PnTacVu.setLayout(PnTacVuLayout);
@@ -135,12 +157,27 @@ public class TinhToan extends javax.swing.JFrame {
 
         buttonGroup1.add(BnCong);
         BnCong.setText("Cộng");
+        BnCong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BnCongActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(BnTru);
         BnTru.setText("Trừ");
+        BnTru.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BnTruActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(BnNhan);
         BnNhan.setText("Nhân");
+        BnNhan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BnNhanActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(BnChia);
         BnChia.setText("Chia");
@@ -295,6 +332,30 @@ public class TinhToan extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TfNhapBActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void BnTruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BnTruActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BnTruActionPerformed
+
+    private void BnCongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BnCongActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BnCongActionPerformed
+
+    private void BnNhanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BnNhanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BnNhanActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -312,20 +373,21 @@ public class TinhToan extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TinhToan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TinhToan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TinhToan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TinhToan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TinhToan().setVisible(true);
+                new Bai6().setVisible(true);
             }
         });
     }
