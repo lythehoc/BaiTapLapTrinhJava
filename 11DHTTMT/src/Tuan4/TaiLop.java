@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Tuan 4 sai mot vai loi nho chinh sua update hoan chinh nam tai CSDLNhanVien tuan 6
 package Tuan4;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;

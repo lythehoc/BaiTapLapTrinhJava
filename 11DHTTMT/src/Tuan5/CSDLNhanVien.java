@@ -1,3 +1,4 @@
+//tham khao tuan 6 se chinh xac hon:)))
 package Tuan5;
 import Tuan5.NhanVien;
 import java.sql.Connection;
