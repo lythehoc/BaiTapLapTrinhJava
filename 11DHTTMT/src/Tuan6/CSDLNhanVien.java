@@ -1,6 +1,5 @@
 package Tuan6;
 
-import Tuan5.*;
 import Tuan5.NhanVien;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -296,6 +295,8 @@ public class CSDLNhanVien extends javax.swing.JFrame {
             preStmt.setString(5, strSubject);
             row = preStmt.executeUpdate();
             System.out.println("Row inserted" + row);
+            DefaultTableModel model = (DefaultTableModel) TBList.getModel();
+            model.setRowCount(0);
             ShowNhanVien();
             conn.close();
         } catch (SQLException ex) {
